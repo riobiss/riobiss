@@ -3,7 +3,7 @@
 		<img src="assets/rio.svg" alt="Opa, eu sou Riobis" width="55%"/>
   	</a>
 	<p>
-		Opa, eu sou desenvolvedor Front-End, desenvolvo <strong>JavaScript, TypeScript, React, HTML e CSS.</strong> Estou aprendendo Back-End no momento
+		Opa, eu sou desenvolvedor Front-End, desenvolvo em <strong>JavaScript, TypeScript, React, HTML e CSS.</strong> Estou aprendendo Back-End no momento
   </p>
 
 
