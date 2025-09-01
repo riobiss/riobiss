@@ -1,7 +1,7 @@
 ## Opa, eu sou Riobis, sou dev Front-End e ando fazendo buttons com cores por ai
 
   <div align="center">
-		<img src="assets/hero.svg" alt="Opa, eu sou Riobis" width="55%"/>
+		<img src="assets/rio.svg" alt="Opa, eu sou Riobis" width="55%"/>
   	</a>
 	<p>
 I'm a Web Developer specializing in frontend development with technologies like <strong>React, Nextjs, and Tailwind</strong>. Currently, I'm learning and improving in backend development, with technologies like <strong>Three.js, MySQL, and Express</strong>, as well as <strong>Typescript</strong>.
