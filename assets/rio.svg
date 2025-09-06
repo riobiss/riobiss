@@ -1,54 +1,128 @@
-<svg width="100%" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Onda 1 -->
-  <path d="M0 280 
-           C150 240, 300 320, 450 280 
-           C600 240, 750 320, 900 280 
-           C1050 240, 1200 320, 1350 280 
-           V400 H0 Z" 
-        fill="#0077ff" fill-opacity="0.5">
-    <!-- Movimento horizontal -->
-    <animateTransform attributeName="transform" type="translate" from="0 0" to="120 0" dur="6s" repeatCount="indefinite"/>
-    <!-- Movimento vertical -->
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 -20;0 0;0 20;0 0" dur="4s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Onda 2 -->
-  <path d="M0 300 
-           C200 340, 400 260, 600 300 
-           C800 340, 1000 260, 1200 300 
-           V400 H0 Z" 
-        fill="#00aaff" fill-opacity="0.4">
-    <!-- Movimento horizontal -->
-    <animateTransform attributeName="transform" type="translate" from="0 0" to="-120 0" dur="8s" repeatCount="indefinite"/>
-    <!-- Movimento vertical -->
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 15;0 0;0 -15;0 0" dur="5s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Onda 3 -->
-  <path d="M0 320 
-           C250 360, 500 280, 750 320 
-           C1000 360, 1250 280, 1500 320 
-           V400 H0 Z" 
-        fill="#66ccff" fill-opacity="0.3">
-    <!-- Movimento horizontal -->
-    <animateTransform attributeName="transform" type="translate" from="0 0" to="100 0" dur="10s" repeatCount="indefinite"/>
-    <!-- Movimento vertical -->
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0;0 10;0 0" dur="6s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Texto -->
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-        font-family="Segoe UI, Arial, Helvetica, sans-serif"
-        font-size="72" font-weight="700"
-        fill="url(#grad)">
-    Hi, I am Riobis
-  </text>
-
-  <!-- Gradiente metálico -->
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradiente metálico para o texto -->
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#cfcfcf" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#7a7a7a" stop-opacity="0.85"/>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cfcfcf"/>
+      <stop offset="100%" stop-color="#7a7a7a"/>
     </linearGradient>
   </defs>
+
+  <!-- Notas musicais animadas atrás do texto -->
+  <g fill="#fff" font-size="18">
+    <!-- Notas distribuídas aleatoriamente -->
+    <text x="50" y="140">♪ 
+      <animate attributeName="y" from="140" to="40" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="90" y="140">♩
+      <animate attributeName="y" from="140" to="50" dur="3.5s" repeatCount="indefinite" begin="0.2s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite" begin="0.2s"/>
+    </text>
+    <text x="130" y="140">♪
+      <animate attributeName="y" from="140" to="30" dur="3.2s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.2s" repeatCount="indefinite" begin="0.5s"/>
+    </text>
+    <text x="170" y="140">♩
+      <animate attributeName="y" from="140" to="45" dur="4s" repeatCount="indefinite" begin="0.3s"/>
+      <animate attributeName="opacity" values="1;0" dur="4s" repeatCount="indefinite" begin="0.3s"/>
+    </text>
+    <text x="210" y="140">♪
+      <animate attributeName="y" from="140" to="20" dur="3.8s" repeatCount="indefinite" begin="0.6s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.8s" repeatCount="indefinite" begin="0.6s"/>
+    </text>
+    <text x="250" y="140">♩
+      <animate attributeName="y" from="140" to="50" dur="3.6s" repeatCount="indefinite" begin="0.1s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.6s" repeatCount="indefinite" begin="0.1s"/>
+    </text>
+    <text x="290" y="140">♪
+      <animate attributeName="y" from="140" to="35" dur="3.9s" repeatCount="indefinite" begin="0.4s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.9s" repeatCount="indefinite" begin="0.4s"/>
+    </text>
+    <text x="330" y="140">♩
+      <animate attributeName="y" from="140" to="25" dur="3.7s" repeatCount="indefinite" begin="0.2s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.7s" repeatCount="indefinite" begin="0.2s"/>
+    </text>
+    <text x="370" y="140">♪
+      <animate attributeName="y" from="140" to="40" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+    </text>
+    <text x="410" y="140">♩
+      <animate attributeName="y" from="140" to="30" dur="4s" repeatCount="indefinite" begin="0.3s"/>
+      <animate attributeName="opacity" values="1;0" dur="4s" repeatCount="indefinite" begin="0.3s"/>
+    </text>
+    <text x="450" y="140">♪
+      <animate attributeName="y" from="140" to="45" dur="3.8s" repeatCount="indefinite" begin="0.6s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.8s" repeatCount="indefinite" begin="0.6s"/>
+    </text>
+    <text x="490" y="140">♩
+      <animate attributeName="y" from="140" to="35" dur="3.9s" repeatCount="indefinite" begin="0.4s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.9s" repeatCount="indefinite" begin="0.4s"/>
+    </text>
+    <text x="530" y="140">♪
+      <animate attributeName="y" from="140" to="25" dur="3.6s" repeatCount="indefinite" begin="0.1s"/>
+      <animate attributeName="opacity" values="1;0" dur="3.6s" repeatCount="indefinite" begin="0.1s"/>
+    </text>
+  </g>
+
+  <!-- Piano no fundo -->
+  <g>
+    <rect x="50" y="140" width="500" height="40" fill="#222"/>
+    <!-- Teclas brancas -->
+    <g fill="#fff">
+      <rect x="50" y="140" width="20" height="40"/>
+      <rect x="70" y="140" width="20" height="40"/>
+      <rect x="90" y="140" width="20" height="40"/>
+      <rect x="110" y="140" width="20" height="40"/>
+      <rect x="130" y="140" width="20" height="40"/>
+      <rect x="150" y="140" width="20" height="40"/>
+      <rect x="170" y="140" width="20" height="40"/>
+      <rect x="190" y="140" width="20" height="40"/>
+      <rect x="210" y="140" width="20" height="40"/>
+      <rect x="230" y="140" width="20" height="40"/>
+      <rect x="250" y="140" width="20" height="40"/>
+      <rect x="270" y="140" width="20" height="40"/>
+      <rect x="290" y="140" width="20" height="40"/>
+      <rect x="310" y="140" width="20" height="40"/>
+      <rect x="330" y="140" width="20" height="40"/>
+      <rect x="350" y="140" width="20" height="40"/>
+      <rect x="370" y="140" width="20" height="40"/>
+      <rect x="390" y="140" width="20" height="40"/>
+      <rect x="410" y="140" width="20" height="40"/>
+      <rect x="430" y="140" width="20" height="40"/>
+      <rect x="450" y="140" width="20" height="40"/>
+      <rect x="470" y="140" width="20" height="40"/>
+      <rect x="490" y="140" width="20" height="40"/>
+      <rect x="510" y="140" width="20" height="40"/>
+      <rect x="530" y="140" width="20" height="40"/>
+      <rect x="550" y="140" width="20" height="40"/>
+    </g>
+    <!-- Teclas pretas -->
+    <g fill="#000">
+      <rect x="65" y="140" width="10" height="25"/>
+      <rect x="85" y="140" width="10" height="25"/>
+      <rect x="125" y="140" width="10" height="25"/>
+      <rect x="145" y="140" width="10" height="25"/>
+      <rect x="185" y="140" width="10" height="25"/>
+      <rect x="205" y="140" width="10" height="25"/>
+      <rect x="245" y="140" width="10" height="25"/>
+      <rect x="265" y="140" width="10" height="25"/>
+      <rect x="305" y="140" width="10" height="25"/>
+      <rect x="325" y="140" width="10" height="25"/>
+      <rect x="365" y="140" width="10" height="25"/>
+      <rect x="385" y="140" width="10" height="25"/>
+      <rect x="425" y="140" width="10" height="25"/>
+      <rect x="445" y="140" width="10" height="25"/>
+      <rect x="485" y="140" width="10" height="25"/>
+      <rect x="505" y="140" width="10" height="25"/>
+      <rect x="545" y="140" width="10" height="25"/>
+    </g>
+  </g>
+
+  <!-- Texto centralizado -->
+  <text x="50%" y="100" text-anchor="middle" dominant-baseline="middle"
+        font-family="Segoe UI, Arial, Helvetica, sans-serif"
+        font-size="48" font-weight="700"
+        fill="url(#textGrad)">
+    Hi, I am Riobis
+  </text>
 </svg>
