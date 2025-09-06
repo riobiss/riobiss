@@ -1,32 +1,26 @@
 <svg width="694" height="259" viewBox="0 0 694 259" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Gradiente de fundo mar -->
-    <linearGradient id="ocean" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#4facfe"/>
-      <stop offset="100%" stop-color="#00f2fe"/>
-    </linearGradient>
-
-    <!-- Gradiente branco → cinza escuro do texto -->
+    <!-- Gradiente do texto -->
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#333333"/>
+      <stop offset="100%" stop-color="#AAAAAA"/>
     </linearGradient>
   </defs>
 
-  <!-- Fundo do mar -->
-  <rect width="694" height="259" fill="url(#ocean)" />
+  <!-- Fundo cinza escuro -->
+  <rect width="694" height="259" fill="#1a1a1a" />
 
-  <!-- Ondas animadas -->
-  <path fill="rgba(255,255,255,0.3)">
-    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+  <!-- Ondas animadas discretas -->
+  <path fill="rgba(255,255,255,0.1)">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
       values="
         M0,150 C150,130 300,170 450,150 C600,130 750,170 900,150 L900,259 L0,259 Z;
         M0,150 C150,170 300,130 450,150 C600,170 750,130 900,150 L900,259 L0,259 Z;
         M0,150 C150,130 300,170 450,150 C600,130 750,170 900,150 L900,259 L0,259 Z
-      "/>
+      " />
   </path>
 
-  <!-- Texto com gradiente branco → cinza escuro -->
+  <!-- Texto central -->
   <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
         font-family="Montserrat, Arial, sans-serif"
         font-size="56" font-weight="800" fill="url(#grad)" letter-spacing="2">
