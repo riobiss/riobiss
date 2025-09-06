@@ -1,26 +1,31 @@
 <svg width="694" height="259" viewBox="0 0 694 259" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Gradiente do texto -->
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF"/>
       <stop offset="100%" stop-color="#AAAAAA"/>
     </linearGradient>
   </defs>
 
-  <!-- Fundo cinza escuro -->
   <rect width="694" height="259" fill="#1a1a1a" />
 
-  <!-- Ondas animadas discretas -->
-  <path fill="rgba(255,255,255,0.1)">
-    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+  <path fill="rgba(255,255,255,0.08)">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite"
       values="
-        M0,150 C150,130 300,170 450,150 C600,130 750,170 900,150 L900,259 L0,259 Z;
-        M0,150 C150,170 300,130 450,150 C600,170 750,130 900,150 L900,259 L0,259 Z;
-        M0,150 C150,130 300,170 450,150 C600,130 750,170 900,150 L900,259 L0,259 Z
+        M0,170 C170,150 340,190 510,170 C680,150 850,190 1020,170 L1020,259 L0,259 Z;
+        M0,175 C170,195 340,155 510,175 C680,195 850,155 1020,175 L1020,259 L0,259 Z;
+        M0,170 C170,150 340,190 510,170 C680,150 850,190 1020,170 L1020,259 L0,259 Z
       " />
   </path>
 
-  <!-- Texto central -->
+  <path fill="rgba(255,255,255,0.05)">
+    <animate attributeName="d" dur="12s" repeatCount="indefinite" begin="2s"
+      values="
+        M0,185 C170,165 340,205 510,185 C680,165 850,205 1020,185 L1020,259 L0,259 Z;
+        M0,190 C170,210 340,170 510,190 C680,210 850,170 1020,190 L1020,259 L0,259 Z;
+        M0,185 C170,165 340,205 510,185 C680,165 850,205 1020,185 L1020,259 L0,259 Z
+      " />
+  </path>
+
   <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
         font-family="Montserrat, Arial, sans-serif"
         font-size="56" font-weight="800" fill="url(#grad)" letter-spacing="2">
